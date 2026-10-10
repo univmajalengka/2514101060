@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keliling Dunia Majalengka</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/favicon-kelilingdunia.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- LOGO -->
+        <a href="#" class="logo">
+          <span class="logo-icon">
+            <i class="fa-solid fa-plane"></i>
+          </span>
+          <span> Keliling Dunia </span>
+        </a>
+
+        <!-- MENU -->
+        <nav class="nav-menu" id="navMenu">
+          <a href="#beranda" class="active">Beranda</a>
+          <a href="#destinasi">Destinasi</a>
+          <a href="#paket">Paket</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#video">Video</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+
+        <!-- ACTION -->
+        <div class="nav-actions">
+          <button class="theme-btn" id="themeBtn" aria-label="Ganti tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="menu-btn" id="menuBtn" aria-label="Buka menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <main>
+      <section id="beranda" class="hero">
+        <div class="hero-container">
+          <!-- HERO TEXT -->
+          <div class="hero-content">
+            <span class="hero-label"> WISATA & REKREASI </span>
+            <h1>Keliling Dunia <strong>Majalengka</strong></h1>
+            <p class="hero-description">Jelajahi berbagai suasana dunia dalam satu tempat. Nikmati spot foto, kostum, dan pengalaman seru bersama keluarga.</p>
+            <div class="hero-buttons">
+              <a href="#destinasi" class="btn-primary">
+                Jelajahi Destinasi
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#paket" class="btn-secondary"> Lihat Paket </a>
+            </div>
+          </div>
+
+          <!-- HERO CARD -->
+          <div class="hero-visual">
+            <div class="card-deck" id="cardDeck">
+              <!-- Card dibuat melalui JavaScript -->
+            </div>
+
+            <div class="slider-controls">
+              <button id="prevBtn" aria-label="Destinasi sebelumnya">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <span id="slideNumber"> 01 / 13 </span>
+              <button id="nextBtn" aria-label="Destinasi berikutnya">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DESTINASI ================= -->
+      <section id="destinasi" class="destination-section">
+        <div class="destination-container">
+          <!-- Header -->
+          <div class="section-header">
+            <div>
+              <span class="section-label">DESTINASI</span>
+              <h2>
+                Jelajahi Dunia
+                <strong>di Majalengka.</strong>
+              </h2>
+            </div>
+            <p>Hadirkan pengalaman menjelajahi berbagai suasana dan landmark dari berbagai belahan dunia dalam satu tempat.</p>
+          </div>
+
+          <!-- Slider -->
+          <div class="destination-slider">
+            <button class="destination-arrow prev" id="destinationPrev" aria-label="Destinasi sebelumnya">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="destination-track-wrapper">
+              <div class="destination-track" id="destinationTrack">
+                <!-- 01 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/tiongkok-pagoda.jpeg" alt="Pagoda Merah" />
+                    <span class="destination-country"> TIONGKOK </span>
+                  </div>
+
+                  <div class="destination-info">
+                    <span>01</span>
+                    <h3>Pagoda Merah</h3>
+                  </div>
+                </article>
+
+                <!-- 02 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/jepang-minka.jpeg" alt="Taman Minka" />
+                    <span class="destination-country"> JEPANG </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>02</span>
+                    <h3>Taman Minka</h3>
+                  </div>
+                </article>
+
+                <!-- 03 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/korea-hanok.jpeg" alt="Taman Hanok" />
+                    <span class="destination-country"> KOREA </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>03</span>
+                    <h3>Taman Hanok</h3>
+                  </div>
+                </article>
+
+                <!-- 04 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/cappadocia-balon.jpeg" alt="Cappadocia" />
+                    <span class="destination-country"> TURKI </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>04</span>
+                    <h3>Cappadocia</h3>
+                  </div>
+                </article>
+
+                <!-- 05 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/kuil-ganesha.jpeg" alt="Kuil Ganesha" />
+                    <span class="destination-country"> INDIA </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>05</span>
+                    <h3>Kuil Ganesha</h3>
+                  </div>
+                </article>
+
+                <!-- 06 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/india-redfort.jpeg" alt="Red Fort" />
+                    <span class="destination-country"> INDIA </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>06</span>
+                    <h3>Red Fort</h3>
+                  </div>
+                </article>
+
+                <!-- 07 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/arabsaudi-mekkah.jpeg" alt="Mekkah" />
+                    <span class="destination-country"> ARAB SAUDI </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>07</span>
+                    <h3>Mekkah</h3>
+                  </div>
+                </article>
+
+                <!-- 08 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/yunani-santorini.jpeg" alt="Santorini" />
+                    <span class="destination-country"> YUNANI </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>08</span>
+                    <h3>Santorini</h3>
+                  </div>
+                </article>
+
+                <!-- 09 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/inggris-stonehenge.jpeg" alt="Stonehenge" />
+                    <span class="destination-country"> INGGRIS </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>09</span>
+                    <h3>Stonehenge</h3>
+                  </div>
+                </article>
+
+                <!-- 10 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/minifarm.jpeg" alt="Minifarm" />
+                    <span class="destination-country"> EDUKASI </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>10</span>
+                    <h3>Minifarm</h3>
+                  </div>
+                </article>
+
+                <!-- 11 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/swiss-lauterbrunnen.jpeg" alt="Lauterbrunnen" />
+                    <span class="destination-country"> SWISS </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>11</span>
+                    <h3>Lauterbrunnen</h3>
+                  </div>
+                </article>
+
+                <!-- 12 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/inggris-cotswold.jpeg" alt="Cotswold" />
+                    <span class="destination-country"> INGGRIS </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>12</span>
+                    <h3>Cotswold</h3>
+                  </div>
+                </article>
+
+                <!-- 13 -->
+                <article class="destination-card">
+                  <div class="destination-image">
+                    <img src="img/belanda-zaanse.jpeg" alt="Zaanse Schans" />
+                    <span class="destination-country"> BELANDA </span>
+                  </div>
+                  <div class="destination-info">
+                    <span>13</span>
+                    <h3>Zaanse Schans</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <button class="destination-arrow next" id="destinationNext" aria-label="Destinasi berikutnya">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Slider Bottom -->
+          <div class="destination-bottom">
+            <span id="destinationNumber">01 / 13</span>
+            <div class="destination-progress">
+              <span id="destinationProgress"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PAKET ================= -->
+      <section id="paket" class="package-section">
+        <div class="package-container">
+          <div class="section-header">
+            <span class="section-label">PAKET & LAYANAN</span>
+            <h2>Pilih Pengalamanmu <strong>di Sini.</strong></h2>
+            <p>Lengkapi kunjunganmu dengan berbagai pilihan tiket dan layanan yang tersedia di Keliling Dunia Majalengka.</p>
+          </div>
+          <div class="package-grid">
+            <!-- Weekday -->
+            <article class="package-card">
+              <div class="package-image">
+                <img src="img/inggris-stonehenge.jpeg" alt="Suasana destinasi wisata untuk kunjungan weekday" loading="lazy" />
+              </div>
+              <div class="package-content">
+                <span class="package-label">TIKET MASUK</span>
+                <h3>Weekday</h3>
+                <p>
+                  Nikmati pengalaman menjelajahi berbagai spot foto dan suasana
+                  dunia dengan harga tiket khusus hari kerja.
+                </p>
+                <button class="package-price" type="button">Rp25.000</button>
+              </div>
+            </article>
+
+            <!-- Weekend -->
+            <article class="package-card">
+              <div class="package-image">
+                <img src="img/cappadocia-balon.jpeg" alt="Spot wisata untuk kunjungan akhir pekan" loading="lazy" />
+              </div>
+              <div class="package-content">
+                <span class="package-label">TIKET MASUK</span>
+                <h3>Weekend</h3>
+                <p>
+                  Isi waktu libur bersama keluarga atau teman dengan mengunjungi
+                  berbagai spot foto bertema dunia.
+                </p>
+                <button class="package-price" type="button">Rp30.000</button>
+              </div>
+            </article>
+
+            <!-- Playground -->
+            <article class="package-card">
+              <div class="package-image">
+                <img src="img/playground.jpeg" alt="Area aktivitas dan rekreasi keluarga" loading="lazy" />
+              </div>
+              <div class="package-content">
+                <span class="package-label">AKTIVITAS</span>
+                <h3>Playground</h3>
+                <p>
+                  Tambahkan keseruan kunjungan dengan aktivitas bermain yang
+                  menyenangkan untuk anak-anak dan keluarga.
+                </p>
+                <button class="package-price" type="button">Rp20.000</button>
+              </div>
+            </article>
+
+            <!-- Sewa Kostum -->
+            <article class="package-card">
+              <div class="package-image">
+                <img src="img/sewakostum.jpeg" alt="Spot foto untuk pengalaman mengenakan kostum" loading="lazy" />
+              </div>
+              <div class="package-content">
+                <span class="package-label">AKTIVITAS</span>
+                <h3>Sewa Kostum</h3>
+                <p>
+                  Lengkapi pengalaman berwisata dengan kostum pilihan agar
+                  momen foto menjadi lebih menarik dan berkesan.
+                </p>
+                <button class="package-price" type="button">Rp30.000</button>
+              </div>
+            </article>
+
+            <!-- Sewa Mobil-Mobilan -->
+            <article class="package-card">
+              <div class="package-image">
+                <img src="img/tamanlalulintas.jpeg" alt="Aktivitas rekreasi untuk keluarga" loading="lazy" />
+              </div>
+              <div class="package-content">
+                <span class="package-label">AKTIVITAS</span>
+                <h3>Sewa Mobil-Mobilan</h3>
+                <p>
+                  Nikmati aktivitas tambahan saat berkunjung untuk membuat
+                  waktu rekreasi bersama keluarga semakin seru.
+                </p>
+                <button class="package-price" type="button">Rp10.000</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= GALERI ================= -->
+      <section id="galeri" class="gallery-section">
+        <div class="gallery-container">
+          <div class="section-header">
+            <span class="section-label">GALERI</span>
+            <h2>Lihat Suasananya <strong>Lebih Dekat.</strong></h2>
+            <p>Intip berbagai spot dan suasana yang bisa kamu temukan saat berkunjung ke Keliling Dunia Majalengka.</p>
+          </div>
+          <div class="gallery-grid" id="galleryGrid">
+            <!-- 01 -->
+            <div class="gallery-item"><img src="img/foto1.jpeg" alt="Pagoda Merah" /></div>
+            <!-- 02 -->
+            <div class="gallery-item"><img src="img/foto2.jpeg" alt="Taman Minka" /></div>
+            <!-- 03 -->
+            <div class="gallery-item"><img src="img/foto3.jpeg" alt="Taman Hanok" /></div>
+            <!-- 04 -->
+            <div class="gallery-item"><img src="img/foto4.jpeg" alt="Cappadocia" /></div>
+            <!-- 05 -->
+            <div class="gallery-item"><img src="img/foto5.jpeg" alt="Kuil Ganesha" /></div>
+            <!-- 06 -->
+            <div class="gallery-item"><img src="img/foto6.jpeg" alt="Red Fort" /></div>
+            <!-- 07 -->
+            <div class="gallery-item"><img src="img/foto7.jpeg" alt="Mekkah" /></div>
+            <!-- 08 -->
+            <div class="gallery-item"><img src="img/foto8.jpeg" alt="Santorini" /></div>
+            <!-- 09 -->
+            <div class="gallery-item gallery-hidden"><img src="img/foto9.jpeg" alt="Stonehenge" /></div>
+            <!-- 10 -->
+            <div class="gallery-item gallery-hidden"><img src="img/foto10.jpeg" alt="Minifarm" /></div>
+            <!-- 11 -->
+            <div class="gallery-item gallery-hidden"><img src="img/foto11.jpeg" alt="Lauterbrunnen" /></div>
+            <!-- 12 -->
+            <div class="gallery-item gallery-hidden"><img src="img/foto12.jpeg" alt="Cotswold" /></div>
+            <!-- FOTO TAMBAHAN -->
+            <!-- <div class="gallery-item gallery-hidden"> <img src="img/nama-file.jpeg" alt="Nama Foto"> </div> -->
+          </div>
+          <div class="gallery-action">
+            <button class="gallery-more" id="galleryMore">Lihat Semua <i class="fa-solid fa-arrow-down"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= VIDEO ================= -->
+      <section id="video" class="video-section">
+        <div class="video-container">
+          <div class="section-header">
+            <span class="section-label">VIDEO</span>
+            <h2>Rasakan Suasananya <strong>Lebih Dekat.</strong></h2>
+            <p>Lihat keseruan dan suasana Keliling Dunia Majalengka melalui video singkat berikut.</p>
+          </div>
+          <div class="video-main">
+            <video id="mainVideo" class="main-video" poster="img/foto10.jpeg" controls playsinline>
+              <source src="video/video1.mp4" type="video/mp4" />
+              Browser Anda tidak mendukung video.
+            </video>
+          </div>
+          <div class="video-caption">
+            <h3>Suasana Keliling Dunia Majalengka</h3>
+            <p>Intip berbagai destinasi, spot foto, dan aktivitas yang bisa kamu nikmati bersama keluarga.</p>
+          </div>
+
+<div class="video-grid">
+  <a href="https://www.youtube.com/watch?v=p8dCMAFdRMY"
+     class="video-card"
+     target="_blank"
+     rel="noopener noreferrer">
+
+    <img src="https://img.youtube.com/vi/p8dCMAFdRMY/hqdefault.jpg"
+         alt="Video Keliling Dunia Majalengka 1">
+
+    <span class="play-button">
+      <i class="fa-brands fa-youtube"></i>
+    </span>
+
+    <span class="youtube-label">
+      <i class="fa-brands fa-youtube"></i> Tonton di YouTube
+    </span>
+  </a>
+
+  <a href="https://www.youtube.com/watch?v=aHkhNBWMuJc"
+     class="video-card"
+     target="_blank"
+     rel="noopener noreferrer">
+
+    <img src="https://img.youtube.com/vi/aHkhNBWMuJc/hqdefault.jpg"
+         alt="Video Keliling Dunia Majalengka 2">
+
+    <span class="play-button">
+      <i class="fa-brands fa-youtube"></i>
+    </span>
+
+    <span class="youtube-label">
+      <i class="fa-brands fa-youtube"></i> Tonton di YouTube
+    </span>
+  </a>
+
+  <a href="https://www.youtube.com/watch?v=QUymET5-lic"
+     class="video-card"
+     target="_blank"
+     rel="noopener noreferrer">
+
+    <img src="https://img.youtube.com/vi/QUymET5-lic/hqdefault.jpg"
+         alt="Video Keliling Dunia Majalengka 3">
+
+    <span class="play-button">
+      <i class="fa-brands fa-youtube"></i>
+    </span>
+
+    <span class="youtube-label">
+      <i class="fa-brands fa-youtube"></i> Tonton di YouTube
+    </span>
+  </a>
+</div>
+
+
+        </div>
+      </section>
+
+      <!-- ================= TENTANG ================= -->
+      <section id="tentang" class="about-section">
+        <div class="about-container">
+          <div class="about-image"><img src="img/kelilingdunia.jpeg" alt="Keliling Dunia Majalengka" /></div>
+          <div class="about-content">
+            <span class="section-label">TENTANG KAMI</span>
+            <h2>Tentang Keliling Dunia <strong>Majalengka.</strong></h2>
+            <p>Keliling Dunia Majalengka menghadirkan pengalaman wisata dengan berbagai suasana dunia dalam satu tempat.</p>
+            <p>Jelajahi spot foto bertema berbagai negara, nikmati fasilitas dan aktivitas bersama keluarga, serta lengkapi momen liburan dengan pilihan kostum yang tersedia.</p>
+            <div class="about-stats">
+              <div class="about-stat"><strong>10+</strong> <span>Destinasi</span></div>
+              <div class="about-stat"><strong>5+</strong> <span>Aktivitas</span></div>
+              <div class="about-stat"><strong>4,5 ★</strong> <span>Google Maps</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= KONTAK ================= -->
+      <section id="kontak" class="contact-section">
+        <div class="contact-container">
+          <div class="contact-content">
+            <span class="section-label">KONTAK</span>
+            <h2>Punya Pertanyaan? <strong>Yuk, Hubungi Kami.</strong></h2>
+            <p>Ada pertanyaan tentang tiket, paket, fasilitas, atau ingin mengetahui informasi lebih lanjut? Jangan ragu untuk menghubungi kami.</p>
+            <a href="https://www.instagram.com/kelilingdunia.mjl/" class="btn-primary" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram"></i>
+              Hubungi Kami
+            </a>
+          </div>
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3961.613648663374!2d108.218261!3d-6.8167563!3m2!1i1024!2i768!4f13.1!2m1!1skeliling%20dunia%20majalengka!5e0!3m2!1sid!2sid!4v1791464988432!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-main">
+            <!-- Brand -->
+            <div class="footer-brand">
+              <a href="#beranda" class="logo">
+                <span class="logo-icon">
+                  <i class="fa-solid fa-plane"></i>
+                </span>
+                <span>Keliling Dunia</span>
+              </a>
+              <p>Jelajahi berbagai suasana dunia dalam satu tempat bersama Keliling Dunia Majalengka.</p>
+            </div>
+            <!-- Menu -->
+            <div class="footer-column">
+              <h3>Menu</h3>
+              <a href="#beranda">Beranda</a>
+              <a href="#destinasi">Destinasi</a>
+              <a href="#paket">Paket</a>
+              <a href="#galeri">Galeri</a>
+              <a href="#video">Video</a>
+              <a href="#tentang">Tentang</a>
+              <a href="#kontak">Kontak</a>
+            </div>
+            <!-- Jam Operasional -->
+            <div class="footer-column footer-contact">
+              <h3>Jam Operasional</h3>
+              <div class="footer-hours">
+                <p>
+                  <span>Weekday</span>
+                  <strong>08:00 - 18:00</strong>
+                </p>
+                <p>
+                  <span>Weekend</span>
+                  <strong>07:00 - 18:00</strong>
+                </p>
+              </div>
+              <p class="footer-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Majalengka, Jawa Barat</span>
+              </p>
+            </div>
+            <!-- Media Sosial -->
+            <div class="footer-column footer-social">
+              <h3>Ikuti Kami</h3>
+              <p>Temukan informasi dan suasana terbaru melalui media sosial kami.</p>
+              <div class="social-links">
+                <a href="https://web.facebook.com/keliling.duniamjl" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/kelilingdunia.mjl/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@kelilingdunia.mjl" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Akhir Footer -->
+          <div class="footer-bottom">
+            <p>© 2026 Keliling Dunia Majalengka. All rights reserved.</p>
+            <a href="#beranda">Kembali ke atas <i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
