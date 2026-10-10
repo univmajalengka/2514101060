@@ -13,7 +13,7 @@ Informatika — Universitas Majalengka
 ## 👤 Identitas Mahasiswa
 
 * **Nama:** Mila Karmila
-* **NIM:** 2514101060
+* **NPM:** 2514101060
 * **Program Studi:** Informatika
 * **Fakultas:** Teknik
 * **Universitas:** Universitas Majalengka
