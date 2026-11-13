@@ -1,0 +1,601 @@
+/* =================================
+   GLOBAL
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f1f2f4, #e2e4e8, #f7f7f8);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #30232a;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(74, 0, 25, 0.12);
+}
+
+/* =================================
+   HEADER
+================================= */
+.header {
+  background: linear-gradient(115deg, #26000d 0%, #4a0019 35%, #850d35 70%, #c51e4a 100%);
+  padding: 35px 40px;
+  color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-label {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #f3b8ca;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #f5dce4;
+  line-height: 1.7;
+}
+
+.percent-decoration {
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.17);
+  transform: none;
+  rotate: 0deg;
+}
+
+/* =================================
+   MAIN CONTENT
+================================= */
+.main-content {
+  padding: 30px 35px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* =================================
+   SECTION CARD
+================================= */
+.section-card {
+  background: #ffffff;
+  border: 1px solid #ede1e5;
+  border-radius: 12px;
+  padding: 22px;
+  min-height: 215px;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.heading-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.heading-title h2 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #4a0019;
+}
+
+.heading-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #f8e9ef;
+  color: #850d35;
+  font-size: 13px;
+}
+
+.section-heading p {
+  font-size: 10px;
+  color: #91818a;
+  line-height: 1.6;
+}
+
+/* =================================
+   INPUT FORM
+================================= */
+form label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #59434d;
+  margin-bottom: 8px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5d5dc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.input-group:focus-within {
+  border-color: #a31342;
+  box-shadow: 0 0 0 3px rgba(163, 19, 66, 0.08);
+}
+
+.currency {
+  padding: 11px 13px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #850d35;
+  background: #f8edf1;
+  border-right: 1px solid #e5d5dc;
+}
+
+.input-group input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  padding: 11px 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  color: #30232a;
+}
+
+.input-group input::placeholder {
+  color: #b5a8ae;
+}
+
+/* =================================
+   BUTTON
+================================= */
+.form-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-submit {
+  flex: 1;
+  border: none;
+  border-radius: 7px;
+  padding: 11px;
+  background: linear-gradient(110deg, #4a0019, #a31342);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(110deg, #650020, #c51e4a);
+  transform: translateY(-1px);
+}
+
+.btn-reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-decoration: none;
+  border: 1px solid #e5d5dc;
+  border-radius: 7px;
+  padding: 10px 15px;
+  color: #795563;
+  font-size: 10px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn-reset i {
+  font-size: 11px;
+}
+
+.btn-reset:hover {
+  background: #f8edf1;
+  border-color: #c51e4a;
+  color: #850d35;
+}
+
+/* =================================
+   ERROR MESSAGE
+================================= */
+.alert-error {
+  background: #fff0f1;
+  border: 1px solid #f3c4ca;
+  border-radius: 7px;
+  padding: 9px 11px;
+  margin-top: 12px;
+  color: #b4233d;
+  font-size: 10px;
+}
+
+/* =================================
+   KETENTUAN DISKON
+================================= */
+.discount-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.discount-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0e7eb;
+  font-size: 11px;
+}
+
+.discount-row:first-child {
+  padding-top: 0;
+}
+
+.discount-row:last-child {
+  border-bottom: none;
+}
+
+.discount-row span {
+  color: #695660;
+}
+
+.discount-row strong {
+  color: #850d35;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =================================
+   HASIL PERHITUNGAN
+================================= */
+.result-section {
+  margin-top: 28px;
+  padding-top: 25px;
+  border-top: 1px solid #eadce2;
+}
+
+.result-section .section-heading {
+  margin-bottom: 15px;
+}
+
+.result-card {
+  background: #fcf9fa;
+  border: 1px solid #efe3e8;
+  border-radius: 11px;
+  padding: 8px 18px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0e7eb;
+  font-size: 11px;
+}
+
+.result-row:last-child {
+  border-bottom: none;
+}
+
+.result-row span {
+  color: #796671;
+}
+
+.result-row strong {
+  color: #4a0019;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.discount-value {
+  color: #b4234b !important;
+}
+
+/* =================================
+   TOTAL PEMBAYARAN
+================================= */
+.total-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(115deg, #26000d 0%, #4a0019 35%, #850d35 70%, #c51e4a 100%);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin-top: 13px;
+  box-shadow: 0 6px 16px rgba(74, 0, 25, 0.2);
+}
+
+.payment-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.payment-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.payment-title i {
+  font-size: 14px;
+  color: #f5c9d7;
+}
+
+.payment-title span {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.payment-label small {
+  color: #f5c9d7;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.payment-value {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-align: right;
+}
+
+/* =================================
+   RIWAYAT TRANSAKSI
+================================= */
+.history-section {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #eadce2;
+}
+
+.history-section .section-heading {
+  margin-bottom: 15px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #efe3e8;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+thead {
+  background: linear-gradient(110deg, #26000d 0%, #4a0019 35%, #850d35 70%, #c51e4a 100%);
+}
+
+th {
+  padding: 13px 12px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px;
+  border-top: 1px solid #f0e7eb;
+  color: #695660;
+  font-size: 10px;
+}
+
+tbody tr:hover {
+  background: #fcf8fa;
+}
+
+.table-total {
+  color: #850d35;
+  font-weight: 700;
+}
+
+.empty-data {
+  text-align: center;
+  padding: 22px;
+  color: #a99aa1;
+}
+
+/* =================================
+   FOOTER
+================================= */
+.footer {
+  background: #fcf9fa;
+  border-top: 1px solid #f0e7eb;
+  padding: 17px;
+  text-align: center;
+  color: #a18d97;
+  font-size: 10px;
+}
+
+/* =================================
+   RESPONSIVE TABLET
+================================= */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 25px 15px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .main-content {
+    padding: 25px;
+  }
+
+  .header {
+    padding: 30px;
+  }
+
+  .header h1 {
+    font-size: 27px;
+  }
+
+  .percent-decoration {
+    font-size: 70px;
+  }
+
+  .section-card {
+    padding: 18px;
+  }
+}
+
+/* =================================
+   RESPONSIVE MOBILE
+================================= */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 15px 10px;
+  }
+
+  .header {
+    padding: 25px 20px;
+  }
+
+  .header-content {
+    gap: 10px;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+
+  .header p {
+    font-size: 11px;
+    max-width: 260px;
+  }
+
+  .header-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .percent-decoration {
+    font-size: 55px;
+  }
+
+  .main-content {
+    padding: 22px 17px;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .section-card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 17px;
+  }
+
+  .result-section {
+    margin-top: 25px;
+  }
+
+  .history-section {
+    margin-top: 25px;
+  }
+}
+
+/* =================================
+   RESPONSIVE SMALL MOBILE
+================================= */
+@media screen and (max-width: 380px) {
+  .header {
+    padding: 22px 17px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .percent-decoration {
+    font-size: 43px;
+  }
+
+  .main-content {
+    padding: 18px 13px;
+  }
+
+  .heading-title h2 {
+    font-size: 14px;
+  }
+
+  .total-payment {
+    padding: 17px 15px;
+  }
+
+  .payment-title span {
+    font-size: 11px;
+  }
+
+  .payment-value {
+    font-size: 17px;
+  }
+
+  .payment-label small {
+    font-size: 8px;
+  }
+
+  .result-row {
+    font-size: 10px;
+  }
+
+  .result-row strong {
+    font-size: 11px;
+  }
+}
